@@ -1,0 +1,7 @@
+{
+  "url": "nats://web.sitmc.club:4222",
+  "token": "",
+  "subject": "test",
+  "sourceName": "minecraft",
+  "chatFormat": "\u00262\u0026l{source} \u00268| \u00267{username} \u00268► \u00267{message}"
+}

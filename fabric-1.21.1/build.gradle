@@ -1,0 +1,50 @@
+plugins {
+    id 'fabric-loom' version '1.14-SNAPSHOT'
+}
+
+configurations {
+    library
+    implementation.extendsFrom library
+}
+
+base {
+    archivesName = "FumiFabric"
+}
+version = "1.0.0"
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.1"
+    mappings "net.fabricmc:yarn:1.21.1+build.3:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.18.4"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.116.7+1.21.1"
+
+    implementation project(":common")
+
+    library "io.nats:jnats:2.25.1"
+}
+
+jar {
+    from project(":common").sourceSets.main.output
+
+    from {
+        configurations.library.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    exclude 'META-INF/*.SF'
+    exclude 'META-INF/*.RSA'
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/maven/**'
+    exclude 'module-info.class'
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+remapJar {
+    inputFile.set(jar.archiveFile)
+    archiveFileName = "${base.archivesName.get()}-${project.minecraft_version}-${project.version}.jar"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}

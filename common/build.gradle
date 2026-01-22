@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group = 'club.sitmc.fumiFabric'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+dependencies {
+    implementation 'io.nats:jnats:2.25.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+}

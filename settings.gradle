@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        maven { url = "https://maven.fabricmc.net/" }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Fumi-Fabric"
+include "common"
+include "fabric-1.21.1"
