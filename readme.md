@@ -1,4 +1,4 @@
-# 🌸 Fumi Fabric
+# 🌸 Fumi Fabric/Neoforge
 
 > **致力于在不同消息平台间传递消息的信使 o(*￣▽￣*)ブ**
 
@@ -10,16 +10,15 @@ Fumi 是一个基于 [NATS 服务器](https://github.com/nats-io) 的消息转�
 
 目前实现的平台和即将进行适配的平台：
 
-| 平台 | 支持状况 | 项目地址 |
-| --- | --- | --- |
+| 平台                  | 支持状况 | 项目地址 |
+|---------------------| --- | --- |
 | Bikkit/Spigot/Paper | 已支持 | [地址](https://www.google.com/search?q=https://github.com/wotsginger/Fumi-Spigot) |
-| QQ（Standalone） | 已支持 | [地址](https://github.com/wotsginger/Fumi-Standalone) |
-| Fabric | 已支持 | 你在这里 |
-| QQ（Nonebot） | 已支持 | 暂未发布 |
-| Forge | 已支持 | 暂未发布 |
-| KOOK | 计划中 | 暂未发布 |
-| Oopz | 计划中 | 暂未发布 |
-| Discord | 计划中 | 暂未发布 |
+| QQ（Standalone）      | 已支持 | [地址](https://github.com/wotsginger/Fumi-Standalone) |
+| Fabric/Forge             | 已支持 | 你在这里 |
+| QQ（Nonebot）         | 已支持 | 暂未发布 |
+| KOOK                | 计划中 | 暂未发布 |
+| Oopz                | 计划中 | 暂未发布 |
+| Discord             | 计划中 | 暂未发布 |
 
 实际上来说，只需要支持将消息以 `{"source":"","message":"","username":""}` 格式发送到 NATS，并支持解析从 NATS 接收到的信息并发送到聊天中即可适配对应平台。如果您有能力，完全可以开发对应的第三方客户端。
 
@@ -29,12 +28,12 @@ Fumi 是一个基于 [NATS 服务器](https://github.com/nats-io) 的消息转�
 
 ### 1. 环境准备
 
-1. 从我们的 [发布页面](https://www.sitmc.club/download) 下载构建好的 `FumiFabric-xxx.jar`。
+1. 从我们的 [发布页面](https://www.sitmc.club/download) 下载构建好的 `FumiFabric-xxx.jar` 或者 `FumiNeoForge-xxx.jar`。
 2. 将 Jar 文件放入服务器的 `mods` 文件夹中。
 
 ### 2. 配置文件
 
-启动服务器后会生成默认配置文件。配置文件位于 `/config/fumi-fabric.json`。
+启动服务器后会生成默认配置文件。配置文件位于 `/config/fumi-fabric.json` 或者 `/config/fumi-neoforge.json`。
 
 在配置中填入对应的 NATS 服务器地址和 Token。可以使用我社提供的 `nats://web.sitmc.club:4222`。如果对于信息安全有所顾虑，可以自行部署 NATS 服务器。
 
