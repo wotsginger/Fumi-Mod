@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[3,)"
+license="MIT"
+
+[[mods]]
+modId="fumi_neoforge"
+version="1.0.0"
+displayName="Fumi NeoForge"
+authors="上海应用技术大学Minecraft社"
+description="致力于在不同消息平台间传递消息的信使o(*￣▽￣*)ブ"
+entry="club.sitmc.fumiFabric.neoforge.FumiNeoForge"
+
+[[dependencies.fumi_neoforge]]
+modId="neoforge"
+type="required"
+versionRange="[20.5,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.fumi_neoforge]]
+modId="minecraft"
+type="required"
+versionRange="[1.20.5,)"
+ordering="NONE"
+side="BOTH"

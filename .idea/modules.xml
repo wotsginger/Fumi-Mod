@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Fumi-Fabric.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Fumi-Fabric.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-1.21.1/Fumi-Fabric.fabric-1.21.1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-1.21.1/Fumi-Fabric.fabric-1.21.1.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric-1.21.1/Fumi-Fabric.fabric-1.21.1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric-1.21.1/Fumi-Fabric.fabric-1.21.1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Neoforge/Fumi-Fabric.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Neoforge/Fumi-Fabric.neoforge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Neoforge/Fumi-Fabric.neoforge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Neoforge/Fumi-Fabric.neoforge.test.iml" />
     </modules>
   </component>
 </project>

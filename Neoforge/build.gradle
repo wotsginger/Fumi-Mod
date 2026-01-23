@@ -1,0 +1,53 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.140'
+}
+
+dependencies {
+    implementation project(":common")
+
+    jarJar "io.nats:jnats:2.25.1"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+neoForge {
+    version = "21.1.51"
+    runs {
+        server {
+            server()
+        }
+    }
+    mods {
+        fumi_neoforge {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+base {
+    archivesName = "FumiNeoForge"
+}
+version = "1.0.0"
+
+jar {
+    from project(":common").sourceSets.main.output
+
+    manifest {
+        attributes([
+                "Specification-Title"     : "fumi_neoforge",
+                "Specification-Vendor"    : "sitmc",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : project.version,
+                "Implementation-Vendor"   : "sitmc"
+        ])
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
