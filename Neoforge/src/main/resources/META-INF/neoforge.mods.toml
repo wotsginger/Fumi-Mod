@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="fumi_neoforge"
-version="1.0.0"
+version="1.0.1"
 displayName="Fumi NeoForge"
 authors="上海应用技术大学Minecraft社"
 description="致力于在不同消息平台间传递消息的信使o(*￣▽￣*)ブ"

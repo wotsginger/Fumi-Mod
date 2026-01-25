@@ -31,7 +31,7 @@ neoForge {
 base {
     archivesName = "FumiNeoForge"
 }
-version = "1.0.0"
+version = "1.0.1"
 
 jar {
     from project(":common").sourceSets.main.output

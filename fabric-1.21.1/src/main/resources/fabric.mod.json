@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "fumi-fabric",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Fumi-Fabric",
   "description": "致力于在不同消息平台间传递消息的信使o(*￣▽￣*)ブ",
   "authors": [
@@ -24,7 +24,7 @@
   "depends": {
     "fabricloader": ">=0.16.10",
     "fabric-api": "*",
-    "minecraft": ">=1.20.6 <=1.21.4",
+    "minecraft": ">=1.20.6 <=1.21.11",
     "java": ">=21"
   }
 }
