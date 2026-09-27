@@ -44,11 +44,7 @@ public class FumiNeoForge {
                 commonLogic.init(config.url, config.token, config.subject);
 
                 commonLogic.listenToRemote(config.sourceName, msg -> {
-                    String text = config.chatFormat
-                            .replace("{source}", msg.source())
-                            .replace("{username}", msg.username())
-                            .replace("{message}", msg.message())
-                            .replace('&', '§');
+                    String text = Common.formatChat(config.chatFormat, msg);
 
                     server.execute(() ->
                             server.getPlayerList()

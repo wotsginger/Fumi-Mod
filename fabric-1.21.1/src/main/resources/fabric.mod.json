@@ -1,30 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "fumi-fabric",
-  "version": "1.0.1",
-  "name": "Fumi-Fabric",
-  "description": "致力于在不同消息平台间传递消息的信使o(*￣▽￣*)ブ",
-  "authors": [
-    "Wots Ginger"
-  ],
-  "contact": {
-    "homepage": "https://www.sitmc.club",
-    "sources": "https://github.com/wotsginger/Fumi-Fabric"
-  },
+  "version": "1.1.0",
+  "name": "Fumi Fabric",
+  "description": "Bridges Minecraft chat with other platforms through NATS.",
+  "authors": [],
+  "contact": {},
   "license": "All-Rights-Reserved",
   "environment": "server",
   "entrypoints": {
-    "main": [
-      "club.sitmc.fumiFabric.fumiFabric"
-    ]
+    "main": ["club.sitmc.fumiFabric.fumiFabric"]
   },
-  "mixins": [
-    "fumi-fabric.mixins.json"
-  ],
   "depends": {
-    "fabricloader": ">=0.16.10",
+    "fabricloader": ">=0.19.5",
     "fabric-api": "*",
-    "minecraft": ">=1.20.6 <=1.21.11",
-    "java": ">=21"
+    "minecraft": ">=26.1 <26.4"
   }
 }

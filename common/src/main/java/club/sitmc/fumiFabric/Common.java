@@ -66,4 +66,11 @@ public class Common {
             if (nc != null) nc.close();
         } catch (Exception ignored) {}
     }
+
+    public static String formatChat(String template, RemoteMessage message) {
+        return template.replace("{source}", message.source())
+                .replace("{username}", message.username())
+                .replace("{message}", message.message())
+                .replace('&', '\u00a7');
+    }
 }

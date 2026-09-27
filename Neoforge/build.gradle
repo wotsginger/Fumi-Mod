@@ -1,5 +1,5 @@
-plugins {
-    id 'net.neoforged.moddev' version '2.0.140'
+ plugins {
+    id 'net.neoforged.moddev' version '2.0.147'
 }
 
 dependencies {
@@ -10,12 +10,12 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(25)
     }
 }
 
 neoForge {
-    version = "21.1.51"
+    version = project.neoforge_version
     runs {
         server {
             server()
@@ -31,7 +31,7 @@ neoForge {
 base {
     archivesName = "FumiNeoForge"
 }
-version = "1.0.1"
+version = project.mod_version
 
 jar {
     from project(":common").sourceSets.main.output

@@ -7,7 +7,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Fumi-Fabric"
+rootProject.name = "Fumi"
 include "common"
 include "fabric-1.21.1"
-include "neoforge"
+include "Neoforge"

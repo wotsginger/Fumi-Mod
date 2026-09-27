@@ -1,25 +1,25 @@
 modLoader="javafml"
-loaderVersion="[3,)"
-license="MIT"
+loaderVersion="[1,)"
+license="All-Rights-Reserved"
 
 [[mods]]
 modId="fumi_neoforge"
-version="1.0.1"
+version="${file.jarVersion}"
 displayName="Fumi NeoForge"
-authors="上海应用技术大学Minecraft社"
-description="致力于在不同消息平台间传递消息的信使o(*￣▽￣*)ブ"
-entry="club.sitmc.fumiFabric.neoforge.FumiNeoForge"
+authors="Fumi"
+description="Bridges Minecraft chat with other platforms through NATS."
+displayTest="IGNORE_SERVER_VERSION"
 
 [[dependencies.fumi_neoforge]]
 modId="neoforge"
 type="required"
-versionRange="[20.5,)"
+versionRange="[26.1,)"
 ordering="NONE"
 side="BOTH"
 
 [[dependencies.fumi_neoforge]]
 modId="minecraft"
 type="required"
-versionRange="[1.20.5,)"
+versionRange="[26.1,26.4)"
 ordering="NONE"
 side="BOTH"
